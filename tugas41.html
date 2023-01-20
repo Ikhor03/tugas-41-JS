@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange - Niomic</title>
+</head>
+
+<body>
+
+    <p>Pilih Warna Background</p>
+    <select name="colorbg" id="colorbg" onchange="rubahBg()">
+        <option value="red">merah</option>
+        <option value="blue">biru</option>
+        <option value="yellow">kuning</option>
+        <option value="white">Putih</option>
+    </select>
+
+    <p id="tes">Saat kamu memilih warna, Background akan berubah</p>
+
+    <script>
+        function rubahBg() {
+            const color = document.getElementById("colorbg").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>
